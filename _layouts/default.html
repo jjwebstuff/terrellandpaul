@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+  <body data-default-background-img="resources/images/other_images/bg5.jpg" data-overlay="true" data-overlay-opacity="0.35">
+
+    <!-- Outer Container -->
+    <div id="outer-container">
+
+      {% include side_navigation.html %}
+
+      {{ content }}
+
+	  {% include footer.html %}   
+
+    </div><!-- #outer-container -->
+    <!-- end: Outer Container -->
+
+	{% include modal.html %}  
+
+	{% include javascript_includes.html %}  
+
+  </body>
+</html>
