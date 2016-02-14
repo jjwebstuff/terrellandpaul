@@ -5,10 +5,10 @@
         height:100%;
         position: fixed;
         top:0;
-        left:3%;  
+        left:5%;  
         width:13%;
-        max-width:150px;
-        min-width:150px; 
+/*        max-width:150px;
+        min-width:150px; */
         background: -moz-linear-gradient(top,  rgba(179,0,0,1) 40%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(40%,rgba(179,0,0,1)), color-stop(100%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0)));
         background: -webkit-linear-gradient(top,  rgba(179,0,0,1) 40%,rgba(0,0,0,0) 100%,rgba(0,0,0,0) 100%);
@@ -80,7 +80,28 @@
 
 /* Add in Garamond font */
 #left-sidebar #main-menu > li.menu-item > a, #left-sidebar #main-menu > li.menu-item > span {
-  font-family: 'EB Garamond', serif;
   /*font-size: 18pt;*/
+  letter-spacing: 3px;
+}
+body, p a, #main-content, strong, em, h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6, dt, .btn, #left-sidebar #main-menu, 
+#left-sidebar #main-menu > li.menu-item.active > *, #main-content, 
+#main-content .projects-grid > li > .item-content .overlay .title,
+#main-content .projects-grid .grid-item .item-content .overlay .title, 
+.form-style .alert, #main-content .contact-details, 
+#main-content .carousel .carousel-indicators.title-indicators li, 
+#main-content .carousel *.title, .owl-carousel .owl-item .caption
+{
+  font-family: 'EB Garamond', serif;
+}
+#main-content section.grid.row{
+  font-size: 13px;
+}
+#left-sidebar .logo img{
+  margin-right: 0px;
+  margin-left: 9px;
+  max-width: 90%;
+}
+h3.schedule-date{
   letter-spacing: 3px;
 }
