@@ -5,7 +5,7 @@
         height:100%;
         position: fixed;
         top:0;
-        left:5%;  
+        left:6%;  
         width:13%;
 /*        max-width:150px;
         min-width:150px; */
@@ -17,6 +17,14 @@
         background: linear-gradient(to bottom,  rgba(179,0,0,1) 40%,rgba(0,0,0,0) 100%,rgba(0,0,0,0) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B3000000', endColorstr='#00000000',GradientType=0 ); 
     }
+}
+@media (min-width: 992px){
+  #left-sidebar {
+/*      left: 6.5%;
+      width: 13%;*/
+      max-width: 225px;
+      min-width: 190px;
+  }
 }
 #left-sidebar #main-menu {
 /*    display: none;
@@ -65,7 +73,13 @@
   .carousel {height: 560px;}
   .carousel .item {height: 560px;}
   .carousel-inner > .item > img {height: 560px;}
-  #main-content .section-wrapper .content-wrapper { text-align: left; }
+  #main-content .section-wrapper .content-wrapper { 
+    text-align: left; 
+    bottom: 16%;
+  }
+  #main-content .section-wrapper:last-of-type .content-wrapper{
+    bottom: 26%;
+  }
 }
 @media(min-width:992px){
   .carousel {height: 675px;}
@@ -73,15 +87,25 @@
   .carousel-inner > .item > img {height: 675px;}
 }
 @media(min-width:1200px){
-  .carousel {height: 850px;}
-  .carousel .item {height: 850px;}
-  .carousel-inner > .item > img {height: 850px;}
+  .carousel {height: 1200px;}
+  .carousel .item {height: 1200px;}
+  .carousel-inner > .item > img {height: 1200px;}
+  
+  #left-sidebar .logo img{
+    max-width: 150%;
+    width: 196px;
+  }
+
 }
 
 /* Add in Garamond font */
 #left-sidebar #main-menu > li.menu-item > a, #left-sidebar #main-menu > li.menu-item > span {
-  /*font-size: 18pt;*/
+  font-size: 18px;
   letter-spacing: 3px;
+  line-height: 24px;
+}
+#left-sidebar #main-menu > li.menu-item {
+    padding-top:45px;
 }
 body, p a, #main-content, strong, em, h1, h2, h3, h4, h5, h6, 
 .h1, .h2, .h3, .h4, .h5, .h6, dt, .btn, #left-sidebar #main-menu, 
@@ -93,15 +117,20 @@ body, p a, #main-content, strong, em, h1, h2, h3, h4, h5, h6,
 #main-content .carousel *.title, .owl-carousel .owl-item .caption
 {
   font-family: 'EB Garamond', serif;
+  /*font-weight: bold;*/
 }
 #main-content section.grid.row{
   font-size: 13px;
 }
-#left-sidebar .logo img{
-  margin-right: 0px;
-  margin-left: 9px;
-  max-width: 90%;
-}
 h3.schedule-date{
+  letter-spacing: 3px;
+}
+h4.header{
+ font-size: 30pt;
+ letter-spacing: 3px;
+ padding-top: 66px;
+}
+p, address, a{
+  font-size: 24px; 
   letter-spacing: 3px;
 }
