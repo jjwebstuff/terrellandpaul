@@ -1,3 +1,11 @@
+@font-face {
+  font-family: AGaramondPro-Bold;
+  src: url(resouces/font/AGaramondPro-Bold.otf);
+}
+@font-face {
+  font-family: AGaramondPro-Semibold;
+  src: url(resouces/font/AGaramondPro-Semibold.otf);
+}
 @media (min-width: 768px) {
     #left-sidebar {
         /* any change has to be replicated in #footer below */
@@ -89,6 +97,7 @@
   }
   .logo-horizontal{
     width: 1000px;
+    margin-left: 20px;
   }
   .slider-horizontal{
     height: 181px;
@@ -104,6 +113,7 @@
   }*/
   .logo-horizontal{
     width: 1200px;
+    margin-left: 20px;
   }
   .slider-horizontal{
     height: 199px;
@@ -121,6 +131,7 @@
   }
   .logo-horizontal{
     width: 1850px;
+    margin-left: 20px;
   }
   .slider-horizontal{
     height: 290px;
@@ -133,6 +144,7 @@
   font-size: 18px;
   letter-spacing: 3px;
   line-height: 24px;
+  font-family: AGaramondPro-Bold;
 }
 #left-sidebar #main-menu > li.menu-item {
     padding-top:45px;
@@ -146,8 +158,7 @@ body, p a, #main-content, strong, em, h1, h2, h3, h4, h5, h6,
 #main-content .carousel .carousel-indicators.title-indicators li, 
 #main-content .carousel *.title, .owl-carousel .owl-item .caption
 {
-  font-family: 'EB Garamond', serif;
-  /*font-weight: bold;*/
+  font-family: AGaramondPro-Semibold;
 }
 #main-content section.grid.row{
   font-size: 13px;
@@ -183,4 +194,11 @@ p, address, a{
   width: 2200px;
   overflow: hidden;
   margin-left: -50px;
+}
+span.highlight{
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+.remove-me{
+  visibility: hidden;
 }
