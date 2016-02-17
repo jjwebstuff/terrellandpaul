@@ -415,11 +415,9 @@ function set_section_to_active(target_section_id, clicked_menu_item_id, called_o
         } // end: background change disabled
         // remove vertical logo if nothing is "active"
         if ($(".menu-item.scroll.active").length != 0){
-            console.log("active exists!");
             $(".logo").removeClass("remove-me");
         }
         else{
-            console.log("active doesnt exists!");
             $(".logo").addClass("remove-me");    
         }
     }
