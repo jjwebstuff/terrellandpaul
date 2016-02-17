@@ -1,14 +1,21 @@
-/* It is recommended to place all your extra/additional CSS rules here */
+@font-face {
+  font-family: AGaramondPro-Bold;
+  src: url(resouces/font/AGaramondPro-Bold.otf);
+}
+@font-face {
+  font-family: AGaramondPro-Semibold;
+  src: url(resouces/font/AGaramondPro-Semibold.otf);
+}
 @media (min-width: 768px) {
     #left-sidebar {
         /* any change has to be replicated in #footer below */
         height:100%;
         position: fixed;
         top:0;
-        left:3%;  
+        left:6%;  
         width:13%;
-        max-width:150px;
-        min-width:150px; 
+/*        max-width:150px;
+        min-width:150px; */
         background: -moz-linear-gradient(top,  rgba(179,0,0,1) 40%, rgba(0,0,0,0) 100%, rgba(0,0,0,0) 100%);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(40%,rgba(179,0,0,1)), color-stop(100%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0)));
         background: -webkit-linear-gradient(top,  rgba(179,0,0,1) 40%,rgba(0,0,0,0) 100%,rgba(0,0,0,0) 100%);
@@ -17,6 +24,14 @@
         background: linear-gradient(to bottom,  rgba(179,0,0,1) 40%,rgba(0,0,0,0) 100%,rgba(0,0,0,0) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B3000000', endColorstr='#00000000',GradientType=0 ); 
     }
+}
+@media (min-width: 992px){
+  #left-sidebar {
+/*      left: 6.5%;
+      width: 13%;*/
+      max-width: 225px;
+      min-width: 190px;
+  }
 }
 #left-sidebar #main-menu {
 /*    display: none;
@@ -60,27 +75,130 @@
   .carousel {height: 450px;}
   .carousel .item {height: 450px;}
   .carousel-inner > .item > img {height: 450px;}
+  .logo-horizontal{
+    width: 862px;
+    margin-left: -250px;
+  }
+  .slider-horizontal{
+    height: 150px;
+    margin-top: -315px;
+  }
 }
 @media(min-width:768px){
   .carousel {height: 560px;}
   .carousel .item {height: 560px;}
   .carousel-inner > .item > img {height: 560px;}
-  #main-content .section-wrapper .content-wrapper { text-align: left; }
+  #main-content .section-wrapper .content-wrapper { 
+    text-align: left; 
+    bottom: 16%;
+  }
+  #main-content .section-wrapper:last-of-type .content-wrapper{
+    bottom: 26%;
+  }
+  .logo-horizontal{
+    width: 1000px;
+    margin-left: 20px;
+  }
+  .slider-horizontal{
+    height: 181px;
+    margin-top: -368px;
+  }
 }
 @media(min-width:992px){
   .carousel {height: 675px;}
   .carousel .item {height: 675px;}
   .carousel-inner > .item > img {height: 675px;}
+/*  #left-sidebar .logo img{
+    max-width: 90%;
+  }*/
+  .logo-horizontal{
+    width: 1200px;
+    margin-left: 20px;
+  }
+  .slider-horizontal{
+    height: 199px;
+    margin-top: -426px;
+  }
 }
 @media(min-width:1200px){
-  .carousel {height: 850px;}
-  .carousel .item {height: 850px;}
-  .carousel-inner > .item > img {height: 850px;}
+  .carousel {height: 1220px;}
+  .carousel .item {height: 1220px;}
+  .carousel-inner > .item > img {height: 1220px;}
+  
+  #left-sidebar .logo img{
+    max-width: 150%;
+    width: 196px;
+  }
+  .logo-horizontal{
+    width: 1850px;
+    margin-left: 20px;
+  }
+  .slider-horizontal{
+    height: 290px;
+    margin-top: -656px;
+  }
 }
 
 /* Add in Garamond font */
 #left-sidebar #main-menu > li.menu-item > a, #left-sidebar #main-menu > li.menu-item > span {
-  font-family: 'EB Garamond', serif;
-  /*font-size: 18pt;*/
+  font-size: 18px;
   letter-spacing: 3px;
+  line-height: 24px;
+  font-family: AGaramondPro-Bold;
+}
+#left-sidebar #main-menu > li.menu-item {
+    padding-top:45px;
+}
+body, p a, #main-content, strong, em, h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6, dt, .btn, #left-sidebar #main-menu, 
+#left-sidebar #main-menu > li.menu-item.active > *, #main-content, 
+#main-content .projects-grid > li > .item-content .overlay .title,
+#main-content .projects-grid .grid-item .item-content .overlay .title, 
+.form-style .alert, #main-content .contact-details, 
+#main-content .carousel .carousel-indicators.title-indicators li, 
+#main-content .carousel *.title, .owl-carousel .owl-item .caption
+{
+  font-family: AGaramondPro-Semibold;
+}
+#main-content section.grid.row{
+  font-size: 13px;
+}
+h4.schedule-date{
+  font-size: 30pt;
+  letter-spacing: 3px;
+}
+h4.header{
+ font-size: 30pt;
+ letter-spacing: 3px;
+ padding-top: 66px;
+}
+p, address, a{
+  font-size: 24px; 
+  letter-spacing: 3px;
+}
+.schedule address{
+  font-size: 18px; 
+  letter-spacing: 2px;
+}
+/* Carousel Cover */
+.main-text {
+  position: absolute;
+  top: 50px;
+  width: 96.6667%;
+}
+.logo-horizontal{
+  margin-top: -45px;
+}
+.slider-horizontal{
+  background-color: rgba(179, 0, 0, 0.4);
+  width: 2200px;
+  overflow: hidden;
+  margin-left: -50px;
+}
+span.highlight{
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+.remove-me{
+  visibility: hidden;
 }
