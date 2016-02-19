@@ -19,6 +19,10 @@ h4.header{
 #left-sidebar #main-menu {
     text-transform: uppercase;
 }
+#left-sidebar .logo img{
+  max-width: 90%;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -145,31 +149,21 @@ h4.header{
 @media(min-width:1200px){
   .carousel {height: 850px;}
   .carousel .item {height: 850px;}
-  .carousel-inner > .item > img {height: 850px;}
-  
-  #left-sidebar .logo img{
-    max-width: 90%;
-    width: 196px;
-  }
+  .carousel-inner > .item > img {height: 850px;}  
   .logo-horizontal{
-    width: 1000px;
+    width: 800px;
     margin-left: 300px;
     margin-top: 275px;
   }
   .slider-horizontal{
-    height: 275px;
-    margin-top: -250px;
+    height: 245px;
+    margin-top: -215px;
   }
 }
 @media(min-width:1500px){
   .carousel {height: 1220px;}
   .carousel .item {height: 1220px;}
   .carousel-inner > .item > img {height: 1220px;}
-  
-  #left-sidebar .logo img{
-    max-width: 150%;
-    width: 196px;
-  }
   .logo-horizontal{
     width: 1200px;
     margin-left: 300px;
