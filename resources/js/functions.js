@@ -51,7 +51,8 @@ function toggle_main_menu()
             main_menu.addClass("menu_closed_on_xs").removeClass("menu_opened_on_xs").slideUp("fast", function(){
                 mobile_menu_icon.removeClass("active");
             });
-
+            $(".logo-horizontal").removeClass("remove-me");
+            $(".slider-horizontal").removeClass("remove-me"); 
             return "closed";
         }
 
@@ -60,11 +61,19 @@ function toggle_main_menu()
             main_menu.addClass("menu_opened_on_xs").removeClass("menu_closed_on_xs").slideDown("fast", function(){
                 mobile_menu_icon.addClass("active");
             });  
-
+            $(".logo-horizontal").addClass("remove-me");
+            $(".slider-horizontal").addClass("remove-me");
             return "opened";          
         }
     }
     // end: only applies for mobile window widths
+    // console.log("open/close");
+    // if ($(".menu_opened_on_xs").length > 0){
+
+    // }
+    // else{
+  
+    // }
 }
 
 /*
