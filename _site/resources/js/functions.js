@@ -51,7 +51,8 @@ function toggle_main_menu()
             main_menu.addClass("menu_closed_on_xs").removeClass("menu_opened_on_xs").slideUp("fast", function(){
                 mobile_menu_icon.removeClass("active");
             });
-
+            $(".logo-horizontal").removeClass("remove-me");
+            $(".slider-horizontal").removeClass("remove-me"); 
             return "closed";
         }
 
@@ -60,11 +61,19 @@ function toggle_main_menu()
             main_menu.addClass("menu_opened_on_xs").removeClass("menu_closed_on_xs").slideDown("fast", function(){
                 mobile_menu_icon.addClass("active");
             });  
-
+            $(".logo-horizontal").addClass("remove-me");
+            $(".slider-horizontal").addClass("remove-me");
             return "opened";          
         }
     }
     // end: only applies for mobile window widths
+    // console.log("open/close");
+    // if ($(".menu_opened_on_xs").length > 0){
+
+    // }
+    // else{
+  
+    // }
 }
 
 /*
@@ -415,11 +424,9 @@ function set_section_to_active(target_section_id, clicked_menu_item_id, called_o
         } // end: background change disabled
         // remove vertical logo if nothing is "active"
         if ($(".menu-item.scroll.active").length != 0){
-            console.log("active exists!");
             $(".logo").removeClass("remove-me");
         }
         else{
-            console.log("active doesnt exists!");
             $(".logo").addClass("remove-me");    
         }
     }
