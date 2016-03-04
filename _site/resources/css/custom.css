@@ -207,7 +207,7 @@ p, address, a{
   font-size: 24px; 
   letter-spacing: 3px;
 }
-.schedule address{
+.schedule address, address a.schedule-link{
   font-size: 18px; 
   letter-spacing: 2px;
 }
