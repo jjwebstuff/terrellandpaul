@@ -203,6 +203,10 @@ h4.schedule-date{
   font-size: 27pt;
   letter-spacing: 3px;
 }
+h4.directions{
+  font-size: 22pt;
+  letter-spacing: 3px;
+}
 p, address, a{
   font-size: 24px; 
   letter-spacing: 3px;
